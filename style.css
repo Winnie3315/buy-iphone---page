@@ -301,12 +301,144 @@ main .new .new_itm:nth-child(2) .down-btn {
   position: sticky;
   top: 130px;
 }
-.ad-item{
-  width: 200px;
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: SF Pro Display;
 }
-.phone-item{
-  border-radius: 20px;
-  transform: scaleY(0.95);
-  position: sticky;
-  top: 130px
+.wrapper .main-h1 {
+  padding-top: 70px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+.wrapper .descript {
+  width: 1008px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 65px;
+}
+
+.mac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+.mac .mac-photo {
+  width: 312px;
+  height: 290px;
+  background-image: url(../img/mac-gray.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+  transition: 0.7s ease;
+}
+.mac .mac-item:last-child h1 {
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mac .mac-item:last-child h3 {
+  color: #0071E3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 48px;
+}
+.mac .mac-item:last-child h2 {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.btns button {
+  cursor: pointer;
+  width: 153px;
+  height: 40px;
+  border: 2px solid #0071E3;
+  border-radius: 10px;
+  background: #0071E3;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s ease;
+}
+.btns .active-btn {
+  border: 0;
+  background: #CFE7FF;
+  color: #797979;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.memory {
+  margin-top: 40px;
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.memory-item {
+  cursor: pointer;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 321px;
+  height: 57px;
+  border: 2px solid #CFE7FF;
+  margin: 0 auto;
+  box-shadow: 0 0 4px rgba(0, 128, 255, 0.2745098039);
+  transition: 0.2 ease;
+}
+.memory-item h1 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.memory-item h3 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.active-mem {
+  border: 2px solid #007FFF;
+  box-shadow: 0 0 4px rgba(0, 128, 255, 0.2745098039);
 }
