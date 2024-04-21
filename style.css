@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url(./font/Gilroy-Regular.ttf) format("truetype"), url(./font/Gilroy-Bold.ttf) format("truetype");
+}
 .unvisible {
   display: none;
 }
@@ -313,6 +317,7 @@ main .new .new_itm:nth-child(2) .down-btn {
   padding-bottom: 25px;
   color: #000;
   text-align: center;
+  font-family: Gilroy;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -323,6 +328,7 @@ main .new .new_itm:nth-child(2) .down-btn {
   text-align: center;
   color: #000;
   text-align: center;
+  font-family: Gilroy;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -339,7 +345,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 .mac .mac-photo {
   width: 312px;
   height: 290px;
-  background-image: url(../img/mac-gray.png);
+  background-image: url(./img/mac-gray.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -349,6 +355,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 .mac .mac-item:last-child h1 {
   color: #000;
   text-align: center;
+  font-family: Gilroy;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -356,6 +363,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 }
 .mac .mac-item:last-child h3 {
   color: #0071E3;
+  font-family: Gilroy;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -364,6 +372,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 }
 .mac .mac-item:last-child h2 {
   color: #000;
+  font-family: Gilroy;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -395,6 +404,7 @@ main .new .new_itm:nth-child(2) .down-btn {
   background: #CFE7FF;
   color: #797979;
   text-align: center;
+  font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -425,6 +435,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 }
 .memory-item h1 {
   color: #000;
+  font-family: Gilroy;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -432,6 +443,7 @@ main .new .new_itm:nth-child(2) .down-btn {
 }
 .memory-item h3 {
   color: #000;
+  font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;

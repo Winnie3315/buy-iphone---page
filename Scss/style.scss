@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Regular"), local("Gilroy-Regular"), url(./font/Gilroy-Regular.ttf) format("truetype"), url(./font/Gilroy-Bold.ttf) format("truetype");
+  }
+
 .unvisible {
     display: none;
 }
@@ -367,7 +373,7 @@ main{
     
             color: #000;
             text-align: center;
-            // font-family: Gilroy;
+            font-family: Gilroy;
             font-size: 48px;
             font-style: normal;
             font-weight: 700;
@@ -381,7 +387,7 @@ main{
     
             color: #000;
             text-align: center;
-            // font-family: Gilroy;
+            font-family: Gilroy;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -400,7 +406,7 @@ main{
         .mac-photo {
             width: 312px;
             height: 290px;
-            background-image: url(../img/mac-gray.png);
+            background-image: url(./img/mac-gray.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -413,7 +419,7 @@ main{
             h1 {
                 color: #000;
                 text-align: center;
-                // font-family: Gilroy;
+                font-family: Gilroy;
                 font-size: 48px;
                 font-style: normal;
                 font-weight: 700;
@@ -422,7 +428,7 @@ main{
     
             h3 {
                 color: #0071E3;
-                // font-family: Gilroy;
+                font-family: Gilroy;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
@@ -432,7 +438,7 @@ main{
     
             h2 {
                 color: #000;
-                // font-family: Gilroy;
+                font-family: Gilroy;
                 font-size: 48px;
                 font-style: normal;
                 font-weight: 700;
@@ -471,7 +477,7 @@ main{
     
             color: #797979;
             text-align: center;
-            // font-family: Gilroy;
+            font-family: Gilroy;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -504,7 +510,7 @@ main{
     
         h1 {
             color: #000;
-            // font-family: Gilroy;
+            font-family: Gilroy;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
@@ -513,7 +519,7 @@ main{
     
         h3 {
             color: #000;
-            // font-family: Gilroy;
+            font-family: Gilroy;
             font-size: 14px;
             font-style: normal;
             font-weight: 600;
@@ -525,4 +531,3 @@ main{
         border: 2px solid #007FFF;
         box-shadow: 0 0 4px #0080ff46;
     }
-    
