@@ -299,11 +299,12 @@ main .new .new_itm:nth-child(2) .down-btn {
   padding-top: 5px;
 }
 
-.phones .phone-itm {
+.phones .phone-item {
   border-radius: 20px;
   transform: scaleY(0.95);
   position: sticky;
   top: 130px;
+  height: auto;
 }
 
 .wrapper {
@@ -453,4 +454,234 @@ main .new .new_itm:nth-child(2) .down-btn {
 .active-mem {
   border: 2px solid #007FFF;
   box-shadow: 0 0 4px rgba(0, 128, 255, 0.2745098039);
+}
+
+.trade-in-bg {
+  background-color: rgba(0, 0, 0, 0.45);
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.trade-in-bg .cross {
+  cursor: pointer;
+  margin: 15px 0 0 15px;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  background-color: rgb(232, 232, 237);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trade-in-bg .trade-in {
+  background-color: white;
+  width: 820px;
+  border-radius: 20px;
+  overflow-y: auto;
+  margin-bottom: 60vh;
+}
+.trade-in-bg .trade-in .top-content {
+  text-align: center;
+  padding: 35px 80px 65px 80px;
+}
+.trade-in-bg .trade-in .top-content .up-h1 {
+  font-family: SF Pro Display;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.trade-in-bg .trade-in .top-content .up-p {
+  font-family: SF Pro Display;
+  font-weight: lighter;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.trade-in-bg .trade-in .top-content .up-p a {
+  color: #007FFF;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+.trade-in-bg .trade-in .top-content .sponsors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.trade-in-bg .trade-in .top-content .sponsors img {
+  width: 110px;
+}
+.trade-in-bg .trade-in .top-content .choose {
+  font-size: 14px;
+  font-family: SF Pro Display;
+  color: #797979;
+  text-align: left;
+  font-weight: lighter;
+  padding-left: 60px;
+}
+.trade-in-bg .trade-in .top-content .drop-menu {
+  cursor: pointer;
+  width: 550px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-family: SF Pro Display;
+  font-size: 23px;
+}
+.trade-in-bg .trade-in .top-content h2 {
+  font-family: SF Pro Display;
+  font-weight: 500;
+  padding-top: 70px;
+}
+
+.accord-bg {
+  background-color: rgb(245, 245, 247);
+  padding: 60px 80px;
+}
+.accord-bg .accordeon .question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.4274509804);
+}
+.accord-bg .accordeon .question h1 {
+  font-family: SF Pro Display;
+  font-size: 25px;
+  font-weight: 500;
+}
+.accord-bg .accordeon .question svg {
+  transition: 0.3s ease;
+}
+.accord-bg .accordeon .answer {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, visibility 0.1s ease, opacity 0.1s ease;
+}
+.accord-bg .accordeon .answer .answer-item {
+  display: flex;
+  padding-top: 25px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.4274509804);
+}
+.accord-bg .accordeon .answer .answer-item .cost-h1 {
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 170px;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item {
+  display: flex;
+  flex-direction: column;
+  font-family: SF Pro Display;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .name-model {
+  font-size: 23px;
+  padding-bottom: 25px;
+  font-weight: 500;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .from {
+  font-size: 23px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .from-p {
+  color: #797979;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .price-model {
+  font-family: SF Pro Display;
+  font-size: 23px;
+  font-weight: 500;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .price-span {
+  color: #000;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.accord-bg .accordeon .answer .answer-item .cost-item .price-p {
+  color: #797979;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.accord-bg .accordeon .answer .answer-item .credit-h1 {
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 300px;
+}
+.accord-bg .accordeon .answer .answer-item .credit-item {
+  display: flex;
+  flex-direction: column;
+  font-family: SF Pro Display;
+}
+.accord-bg .accordeon .answer .answer-item .credit-item .credit-price {
+  font-family: SF Pro Display;
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.accord-bg .accordeon .answer .answer-item .credit-item .credit-span {
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.accord-bg .accordeon .answer .answer-item .credit-item .credit-p {
+  color: #797979;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.accord-bg .accordeon .answer .answer-item .deal-h1 {
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 170px;
+}
+.accord-bg .accordeon .answer .answer-item .deal-item {
+  display: flex;
+  flex-direction: column;
+  font-family: SF Pro Display;
+}
+.accord-bg .accordeon .answer .answer-item .deal-item p {
+  color: #797979;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.accord-bg .accordeon .answer .answer-item .deal-item p:last-child {
+  padding-bottom: 25px;
+}
+
+.accordeon-last {
+  padding-top: 50px;
+}
+
+.long-text {
+  padding-top: 30px;
+  font-family: SF Pro Display;
+  color: #797979;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.arrow-active {
+  transform: rotateX(180deg);
+}
+
+.active-answer {
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }

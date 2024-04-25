@@ -136,5 +136,25 @@ blue.onclick = () => {
     blackImg.classList.add('unvisible')
 }
 
+let open = document.querySelector('.open')
+let close = document.querySelector('.cross')
+let dialog = document.querySelector('.trade-in-bg')
 
+open.onclick = () => {
+    dialog.style.display = 'flex'
+}
+close.onclick = () => {
+    dialog.style.display = 'none'
+}
+
+let questions = document.querySelectorAll('.question')
+let answers = document.querySelectorAll('.answer')
+let arrows = document.querySelectorAll('.arrow-que')
+
+questions.forEach((question, idx) => {
+    question.onclick = () => {
+        answers[idx].classList.toggle('active-answer')
+        arrows[idx].classList.toggle('arrow-active')
+    }
+})
 

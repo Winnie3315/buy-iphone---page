@@ -353,11 +353,14 @@ main{
     }
 
     .phones {
-        .phone-itm{
+        // display: flex;
+        // height: 100vh;
+        .phone-item {
             border-radius: 20px;
             transform: scaleY(0.95);
             position: sticky;
             top: 130px;
+            height: auto;
         }
     }
     .wrapper {
@@ -531,3 +534,281 @@ main{
         border: 2px solid #007FFF;
         box-shadow: 0 0 4px #0080ff46;
     }
+
+
+
+
+    
+.trade-in-bg {
+    background-color: rgba(0, 0, 0, 0.45);
+    display: none;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .cross {
+        cursor: pointer;
+        margin: 15px 0 0 15px;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        background-color: rgb(232, 232, 237);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trade-in {
+        background-color: white;
+        width: 820px;
+        border-radius: 20px;
+        overflow-y: auto;
+        margin-bottom: 60vh;
+
+        .top-content {
+            text-align: center;
+            padding: 35px 80px 65px 80px;
+
+            .up-h1 {
+                font-family: SF Pro Display;
+                font-size: 40px;
+                padding-bottom: 15px;
+            }
+
+            .up-p {
+                font-family: SF Pro Display;
+                font-weight: lighter;
+                font-size: 18px;
+                padding-bottom: 30px;
+
+                & a {
+                    color: #007FFF;
+                    text-decoration: 0;
+                }
+            }
+
+            .sponsors {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding-bottom: 40px;
+
+                & img {
+                    width: 110px;
+                }
+            }
+
+            .choose {
+                font-size: 14px;
+                font-family: SF Pro Display;
+                color: #797979;
+                text-align: left;
+                font-weight: lighter;
+                padding-left: 60px;
+            }
+
+            .drop-menu {
+                cursor: pointer;
+                width: 550px;
+                border: 1px solid #000;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                padding: 10px 15px;
+                font-family: SF Pro Display;
+                font-size: 23px;
+            }
+
+
+            & h2 {
+                font-family: SF Pro Display;
+                font-weight: 500;
+                padding-top: 70px;
+            }
+        }
+    }
+}
+
+
+.accord-bg {
+    background-color: rgb(245, 245, 247);
+    padding: 60px 80px;
+
+    .accordeon {
+
+        .question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #7979796d;
+
+            & h1 {
+                font-family: SF Pro Display;
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            & svg {
+                transition: .3s ease;
+            }
+        }
+
+        .answer {
+
+            max-height: 0;
+            visibility: hidden;
+            opacity: 0;
+
+            transition: max-height .5s ease, visibility 0.1s ease, opacity 0.1s ease;
+
+            .answer-item {
+                display: flex;
+                padding-top: 25px;
+                border-bottom: 1px solid #7979796d;
+
+                .cost-h1 {
+                    font-family: SF Pro Display;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    // padding-right: 110px;
+                    width: 170px;
+                }
+
+                .cost-item {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: SF Pro Display;
+
+
+                    .name-model {
+                        font-size: 23px;
+                        padding-bottom: 25px;
+                        font-weight: 500;
+                    }
+
+                    .from {
+                        font-size: 23px;
+                        padding-bottom: 5px;
+                        font-weight: 500;
+                    }
+
+                    .from-p {
+                        color: #797979;
+                        font-size: 14px;
+                        padding-bottom: 25px;
+                    }
+
+                    .price-model {
+                        font-family: SF Pro Display;
+                        font-size: 23px;
+                        font-weight: 500;
+                    }
+
+                    .price-span {
+                        color: #000;
+                        font-size: 14px;
+                        padding-bottom: 8px;
+                    }
+
+                    .price-p {
+                        color: #797979;
+                        font-size: 14px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                .credit-h1 {
+                    font-family: SF Pro Display;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    // padding-right: 110px;
+                    width: 300px;
+                }
+
+                .credit-item {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: SF Pro Display;
+
+                    .credit-price {
+                        font-family: SF Pro Display;
+                        font-size: 23px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                    }
+
+                    .credit-span {
+                        color: #000;
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                    }
+
+                    .credit-p {
+                        color: #797979;
+                        font-size: 14px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                .deal-h1 {
+                    font-family: SF Pro Display;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    width: 170px;
+                }
+
+                .deal-item {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: SF Pro Display;
+
+                    & p {
+                        color: #797979;
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                    }
+
+                    & p:last-child {
+                        padding-bottom: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.accordeon-last {
+    padding-top: 50px;
+}
+
+.long-text {
+    padding-top: 30px;
+    font-family: SF Pro Display;
+    color: #797979;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.arrow-active {
+    transform: rotateX(180deg)
+}
+
+.active-answer {
+    max-height: fit-content !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
